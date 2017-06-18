@@ -3,8 +3,8 @@ A Haskell file named `scoped-type-variables.hs` with the following contents
 ```haskell
 {-# LANGUAGE ScopedTypeVariables #-}
 
-> func :: Show a => a -> String
-> func x = show (x :: a)
+func :: Show a => a -> String
+func x = show (x :: a)
 ```
 
 produces the following errors when compiled,
